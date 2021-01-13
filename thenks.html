@@ -1,0 +1,62 @@
+<html>
+<head>
+<style type="text/css">
+#container
+{
+    position: absolute;
+    background-color: rgb(29, 29, 29);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    padding: 10px;
+    padding-right: 20px;
+    text-align: center;
+    width:30%;
+    top:20%;
+    right:450px;
+    border: 2px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 3px 6px 6px rgba(24, 21, 21, 0.726);
+    font-size: 113%;
+}
+#backtologin
+{
+    position: relative;
+    margin: 10px;
+    background-color: rgb(52, 52, 214);
+    border:0px;
+    border-radius: 3px;
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    box-shadow: 3px 3px 3px 0 rgba(0,0,0,0.2);
+    transition-duration: 0.5s;
+} 
+</style>
+<script type="text/javascript" style="background-size:cover;">
+<!--
+    function func()
+    {
+      localStorage.setItem("discount","0");
+      var user=document.getElementById("username");
+      user.innerHTML+="<br><br>"+localStorage.getItem('Usermail');
+    }
+
+    function next_page()
+    {
+      window.location="loginfinal.php";
+    }
+-->
+</script>
+</head>
+<body onload="func()" background="back.jpg">
+<div id="container">
+    Thank you, Please Visit Again!
+    <br>
+<div id="username">
+    <br>
+<button id="backtologin" onclick="next_page()">Back to Login Page</button>
+</div>
+</div>
+</body>
+</html>
